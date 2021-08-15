@@ -1,11 +1,18 @@
 # mbed-os_MP3-Remote-LCD
-![](./resources/official_armmbed_example_badge.png)
-# Blinky Mbed OS example
 
-The example project is part of the [Arm Mbed OS Official Examples](https://os.mbed.com/code/) and is the [getting started example for Mbed OS](https://os.mbed.com/docs/mbed-os/latest/quick-start/index.html). It contains an application that repeatedly blinks an LED on supported [Mbed boards](https://os.mbed.com/platforms/).
+[![Build status master][mbed-master-svg]][mbed-master]
+[![Tools coverage status][mbed-coveralls-tools-svg]][mbed-coveralls-tools]
+
+The current project is a project result of Handong Global University(HGU) 21-1 Semester Embedded Process Application. The VS1053 codec also renders music within the SD card, and also includes music control via RemoteIR and current state output functions using LCD panels.
 
 You can build the project with all supported [Mbed OS build tools](https://os.mbed.com/docs/mbed-os/latest/tools/index.html). However, this example project specifically refers to the command-line interface tool [Arm Mbed CLI](https://github.com/ARMmbed/mbed-cli#installing-mbed-cli).
 (Note: To see a rendered example you can import into the Arm Online Compiler, please see our [import quick start](https://os.mbed.com/docs/mbed-os/latest/quick-start/online-with-the-online-compiler.html#importing-the-code).)
+
+## Requirements
+1. Nucleo Board (NUCLEO-F411RE) with Mbed-OS (mbedOS v6.10)
+2. MP3 Codec (VS1053)
+3. IR Receiver (AX-1838HS)
+4. LCD Panel (SSD1306)
 
 ## Mbed OS build tools
 
@@ -52,11 +59,9 @@ The binary is located at:
 Alternatively, you can manually copy the binary to the board, which you mount on the host computer over USB.
 
 ## Expected output
-The LED on your target turns on and off every 500 milliseconds.
-
-
-## Troubleshooting
-If you have problems, you can review the [documentation](https://os.mbed.com/docs/latest/tutorials/debugging.html) for suggestions on what could be wrong and how to fix it.
+1. The music stored on the SD card will be played.
+2. Remote control allows you to control various functions.
+3. You can find out the information of the current song through the LCD panel.
 
 ## Related Links
 
