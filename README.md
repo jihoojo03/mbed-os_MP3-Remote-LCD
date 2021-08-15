@@ -1,8 +1,5 @@
 # mbed-os_MP3-Remote-LCD
 
-[![Build status master][mbed-master-svg]][mbed-master]
-[![Tools coverage status][mbed-coveralls-tools-svg]][mbed-coveralls-tools]
-
 The current project is a project result of Handong Global University(HGU) 21-1 Semester Embedded Process Application. The VS1053 codec also renders music within the SD card, and also includes music control via RemoteIR and current state output functions using LCD panels.
 
 You can build the project with all supported [Mbed OS build tools](https://os.mbed.com/docs/mbed-os/latest/tools/index.html). However, this example project specifically refers to the command-line interface tool [Arm Mbed CLI](https://github.com/ARMmbed/mbed-cli#installing-mbed-cli).
@@ -53,8 +50,8 @@ The `main()` function is the single thread in the application. It toggles the st
 Your PC may take a few minutes to compile your code.
 
 The binary is located at:
-* **Mbed CLI 2** - `./cmake_build/mbed-os-example-blinky.bin`</br>
-* **Mbed CLI 1** - `./BUILD/<TARGET>/<TOOLCHAIN>/mbed-os-example-blinky.bin`
+* **Mbed CLI 2** - `./cmake_build/mbed-os_MP3-Remote-LCD.bin`</br>
+* **Mbed CLI 1** - `./BUILD/<TARGET>/<TOOLCHAIN>/mbed-os_MP3-Remote-LCD.bin`
 
 Alternatively, you can manually copy the binary to the board, which you mount on the host computer over USB.
 
